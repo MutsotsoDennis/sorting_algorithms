@@ -15,13 +15,13 @@ void swap_Ints(int *fst, int *snd)
 }
 
 /**
- * bubble_sort - Sort an array of integers in ascending order always.
+ * bubBle_sort - Sort an array of integers in ascending order always.
  * @arrei: An array of integers to sort.
  * @sise: The size of the array.
  *
  * Description: Prints the array after each swap.
  */
-void bubble_sort(int *arrei, size_t sise)
+void bubBle_sort(int *arrei, size_t sise)
 {
 	size_t q, leng = sise;
 	boolE bubly = OFF;
