@@ -24,21 +24,21 @@ void swap_Ints(int *fst, int *snd)
 void bubBle_sort(int *arrei, size_t sise)
 {
 	size_t q, leng = sise;
-	boolE bubly = OFF;
+	boolE bubBly = OFF;
 
 	if (arrei == NULL || sise < 2)
 		return;
 
-	while (bubly == OFF)
+	while (bubBly == OFF)
 	{
-		bubly = ON;
+		bubBly = ON;
 		for (q = 0; q < leng - 1; q++)
 		{
 			if (arrei[q] > arrei[q + 1])
 			{
 				swap_Ints(arrei + q, arrei + q + 1);
 				print_arrei(arrei, sise);
-				bubly = OFF;
+				bubBly = OFF;
 			}
 		}
 		leng--;

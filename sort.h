@@ -22,25 +22,25 @@ typedef enum boolE
 /**
  * struct list_dem - Doubly linked list node
  *
- * @valu: Integer stored in the node's
- * @prev: Pointer to the before element of the list
- * @next: Pointer to the predecessor  element of the list
+ * @nd: Integer stored in the node's
+ * @pre: Pointer to the before element of the list
+ * @post: Pointer to the predecessor  element of the list
  */
 typedef struct list_dem
 {
-	const int valu;
-	struct list_dem *prev;
-	struct list_dem *next;
+	const int nd;
+	struct list_dem *pre;
+	struct list_dem *post;
 } list_dem;
 
 /* Writing the helper functions */
-void print_arrei(const int *arrei, size_t leng);
-void print_nod(const list_nod *nod);
+void print_arrei(const int *arrei, size_t sise);
+void print_lzt(const lzt_int *lzt);
 
 /* Sorting the algoritms */
-void bubble_sort(int *arrei, size_t sise);
-void insertion_sort_list(list_dem **liist);
-void selection_sort(int *arrei, size_t sise);
-void quick_sort(int *arrei, size_t sise);
+void bubBle_sort(int *arrei, size_t sise);
+void inSertion_sort_lst(lzt_int **lizt);
+void selecTion_sort(int *arrei, size_t sise);
+void quick_sorT(int *arrei, size_t sise);
 
 #endif /* SORT_H */
